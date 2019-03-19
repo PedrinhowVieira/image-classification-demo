@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import App from './App/App';
+import SimpleAppBar from './App/App';
 
 ReactDOM.render(
-  <App />,
+  <SimpleAppBar />,
   document.getElementById('root')
 );
 
