@@ -4,7 +4,7 @@ import { NoSsr, Grid } from '@material-ui/core/';
 import { UpperBar, SearchBar, SideList } from './../imports'
 import { Canvas, Canvas2, Canvas3, Canvas4 } from './../imports'
 
-function SimpleAppBar() {
+function App() {
   return (
     <Fragment>
       <NoSsr>
@@ -37,4 +37,4 @@ function SimpleAppBar() {
 
 
 
-export default SimpleAppBar;
+export default App;
