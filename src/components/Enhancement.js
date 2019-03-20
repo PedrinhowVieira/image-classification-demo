@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import './../styles/Canvas.css'
+import { Button } from '@material-ui/core/';
 
 class Enhancement extends Component {
   render() {
     return (
-      <img src={require('./../Images/gallery.jpg')} className='gallery' alt=""/>
+      <Button variant="contained" >
+        Default
+      </Button>
     );
   }
 }
