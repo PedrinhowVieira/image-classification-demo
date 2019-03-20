@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { BrowserRouter as Router, MemoryRouter, Route } from "react-router-dom";
 import { NoSsr, Grid } from '@material-ui/core/';
 import { UpperBar, SearchBar, SideList } from './../imports'
-import { Canvas, Canvas2, Canvas3, Canvas4 } from './../imports'
+import { Enhancement, Classification, Filename, Summary } from './../imports'
 
 function App() {
   return (
@@ -22,10 +22,10 @@ function App() {
 
               </Grid>
               <Grid item sm={10}>
-                <Route path="/enchancement" component={Canvas} />
-                <Route path="/type" component={Canvas2} />
-                <Route path="/title" component={Canvas3} />
-                <Route path="/receipt" component={Canvas4} />
+                <Route path="(/|/enhancement)" component={Enhancement} />
+                <Route path="/classification" component={Classification} />
+                <Route path="/filename" component={Filename} />
+                <Route path="/summary" component={Summary} />
               </Grid>
             </Grid>
           </Router>

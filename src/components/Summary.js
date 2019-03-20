@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Canvas2 extends Component {
+class Summary extends Component {
   render() {
     return (
       <img src={require('./../Images/gallery2.jpeg')} alt=""/>
@@ -8,4 +8,4 @@ class Canvas2 extends Component {
   }
 }
 
-export default Canvas2;
+export default Summary;

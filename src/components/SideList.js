@@ -7,22 +7,19 @@ class SideList extends Component {
     return (
       <Fragment>
         <List component="nav">
-          <ListItem button component={Link} to={"/enchancement"}>
+          <ListItem button component={Link} to={"/enhancement"}>
             <ListItemText primary="Enhancement Method" />
           </ListItem>
-          <ListItem button component={Link} to={"/type"}>
+          <ListItem button component={Link} to={"/classification"}>
             <ListItemText primary="Document Type" />
           </ListItem>
-          <ListItem button component={Link} to={"/title"}>
+          <ListItem button component={Link} to={"/filename"}>
             <ListItemText primary="Document Title" />
-          </ListItem>
-          <ListItem button component={Link} to={"/receipt"}>
-            <ListItemText primary="Receipt" />
           </ListItem>
         </List>
         <Divider />
         <List component="nav">
-          <ListItem button >
+          <ListItem button component={Link} to={"/summary"}>
             <ListItemText primary="Summary" />
           </ListItem>
         </List>

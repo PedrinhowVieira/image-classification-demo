@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import './../styles/Canvas.css'
 
-class Canvas extends Component {
+class Enhancement extends Component {
   render() {
     return (
       <img src={require('./../Images/gallery.jpg')} className='gallery' alt=""/>
@@ -9,4 +9,4 @@ class Canvas extends Component {
   }
 }
 
-export default Canvas;
+export default Enhancement;

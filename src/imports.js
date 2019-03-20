@@ -1,16 +1,16 @@
-import Canvas from './components/Canvas'
-import Canvas2 from './components/Canvas2'
-import Canvas3 from './components/Canvas3'
-import Canvas4 from './components/Canvas4'
+import Enhancement from './components/Enhancement'
+import Classification from './components/Classification'
+import Filename from './components/Filename'
+import Summary from './components/Summary'
 import UpperBar from './components/UpperBar'
 import SearchBar from './components/SearchBar'
 import SideList from './components/SideList'
 
 export {
-  Canvas,
-  Canvas2,
-  Canvas3,
-  Canvas4,
+  Enhancement,
+  Classification,
+  Filename,
+  Summary,
   UpperBar,
   SearchBar,
   SideList,
