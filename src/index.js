@@ -4,8 +4,10 @@ import { Provider } from 'react-globally'
 import App from './App/App'
 
 const initialState = {
-  go_to:"",
-  enhancement: undefined,
+  enhancement: {
+    done: 0,
+    data: undefined,
+  },
   classification: undefined,
   filename: undefined,
 }

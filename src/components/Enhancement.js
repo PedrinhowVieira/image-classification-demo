@@ -5,7 +5,10 @@ import { withGlobalState } from 'react-globally'
 class Enhancement extends Component {
   cycleState = (i) => {
     this.props.setGlobalState({
-      enhancement: [i]
+      enhancement: {
+        done: 1,
+        data: [i],
+      }
     });
   }
 
@@ -13,7 +16,8 @@ class Enhancement extends Component {
     return (
       <Fragment>
         <div>
-          Global State {this.props.globalState.enhancement}
+          Global State {this.props.globalState.enhancement.data}
+          Global Done {this.props.globalState.enhancement.done}
         </div>
         <Grid container spacing={8}>
           <Grid container item xs={12} spacing={8}>

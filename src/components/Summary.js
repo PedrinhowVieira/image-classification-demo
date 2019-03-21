@@ -21,7 +21,7 @@ class Summary extends Component {
                   Enhancement Method
                 </TableCell>
                 <TableCell>
-                  {this.props.globalState.enhancement}
+                  {this.props.globalState.enhancement.data}
                 </TableCell>
               </TableRow>
             </TableBody>
