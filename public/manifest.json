@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "MML Classification Tool",
+  "name": "Mobile Machine Learning Classification Tool",
   "icons": [
     {
       "src": "favicon.ico",
