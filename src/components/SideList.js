@@ -11,10 +11,10 @@ class SideList extends Component {
             <ListItemText primary="Enhancement Method" />
           </ListItem>
           <ListItem button component={Link} to={"/classification"}>
-            <ListItemText primary="Document Type" />
+            <ListItemText primary="Document Classification" />
           </ListItem>
           <ListItem button component={Link} to={"/filename"}>
-            <ListItemText primary="Document Title" />
+            <ListItemText primary="Document File Name" />
           </ListItem>
         </List>
         <Divider />

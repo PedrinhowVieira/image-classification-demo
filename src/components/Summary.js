@@ -1,11 +1,35 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import { withGlobalState } from 'react-globally'
+import { Table, TableBody, TableCell, TableHead, TableRow, Paper } from '@material-ui/core/'
 
 class Summary extends Component {
+
   render() {
     return (
-      <img src={require('./../Images/gallery2.jpeg')} alt=""/>
+      <Fragment>
+        <Paper>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>Attribute</TableCell>
+                <TableCell>Selection</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableCell component="th" scope="row">
+                  Enhancement Method
+                </TableCell>
+                <TableCell>
+                  {this.props.globalState.enhance}
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </Paper>
+      </Fragment>
     );
   }
 }
 
-export default Summary;
+export default withGlobalState(Summary);
