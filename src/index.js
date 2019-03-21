@@ -5,7 +5,7 @@ import App from './App/App'
 
 const initialState = {
   enhancement: {
-    done: 0,
+    done: false,
     data: undefined,
   },
   classification: undefined,

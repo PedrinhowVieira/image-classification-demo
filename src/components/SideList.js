@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
-import { List, ListItem, ListItemText, Divider } from '@material-ui/core/';
+import { List, ListItem, ListItemText, Divider, Checkbox } from '@material-ui/core/';
 import { Link } from "react-router-dom";
+import { withGlobalState } from 'react-globally'
 
 class SideList extends Component {
   render() {
@@ -8,6 +9,11 @@ class SideList extends Component {
       <Fragment>
         <List component="nav">
           <ListItem button component={Link} to={"/enhancement"}>
+            <Checkbox
+              checked={this.props.globalState.enhancement.done}
+              tabIndex={-1}
+              disableRipple
+            />
             <ListItemText primary="Enhancement Method" />
           </ListItem>
           <ListItem button component={Link} to={"/classification"}>
@@ -28,4 +34,4 @@ class SideList extends Component {
   }
 }
 
-export default SideList;
+export default withGlobalState(SideList);

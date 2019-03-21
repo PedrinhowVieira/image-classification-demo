@@ -6,7 +6,7 @@ class Enhancement extends Component {
   cycleState = (i) => {
     this.props.setGlobalState({
       enhancement: {
-        done: 1,
+        done: true,
         data: [i],
       }
     });
