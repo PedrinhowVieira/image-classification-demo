@@ -17,9 +17,19 @@ class SideList extends Component {
             <ListItemText primary="Enhancement Method" />
           </ListItem>
           <ListItem button component={Link} to={"/classification"}>
+            <Checkbox
+              checked={this.props.globalState.classification.done}
+              tabIndex={-1}
+              disableRipple
+            />
             <ListItemText primary="Document Classification" />
           </ListItem>
           <ListItem button component={Link} to={"/filename"}>
+            <Checkbox
+              checked={this.props.globalState.filename.done}
+              tabIndex={-1}
+              disableRipple
+            />
             <ListItemText primary="Document File Name" />
           </ListItem>
         </List>

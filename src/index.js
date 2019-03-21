@@ -8,8 +8,14 @@ const initialState = {
     done: false,
     data: undefined,
   },
-  classification: undefined,
-  filename: undefined,
+  classification: {
+    done: false,
+    data: undefined,
+  },
+  filename: {
+    done: false,
+    data: undefined,
+  },
 }
 
 ReactDOM.render(

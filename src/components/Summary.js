@@ -24,6 +24,22 @@ class Summary extends Component {
                   {this.props.globalState.enhancement.data}
                 </TableCell>
               </TableRow>
+              <TableRow>
+                <TableCell component="th" scope="row">
+                  Document Classification
+                </TableCell>
+                <TableCell>
+                  {this.props.globalState.classification.data}
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell component="th" scope="row">
+                  Document File Name
+                </TableCell>
+                <TableCell>
+                  {this.props.globalState.filename.data}
+                </TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </Paper>
