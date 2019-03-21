@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from "react";
-import { Button } from '@material-ui/core/';
+import { Button, Grid } from '@material-ui/core/';
 import { withGlobalState } from 'react-globally'
 
 class Enhancement extends Component {
-  cycleState = (props) => {
+  cycleState = (i) => {
     this.props.setGlobalState({
-      enhance: 1
+      enhancement: [i]
     });
   }
 
@@ -13,11 +13,34 @@ class Enhancement extends Component {
     return (
       <Fragment>
         <div>
-          Global State {this.props.globalState.enhance}
+          Global State {this.props.globalState.enhancement}
         </div>
-        <Button variant="contained" onClick={this.cycleState}>
-          Set One
-        </Button>
+        <Grid container spacing={8}>
+          <Grid container item xs={12} spacing={8}>
+            <Grid item xs={6}>
+              <Button variant="contained" onClick={() => this.cycleState(1)}>
+                <img src={require('./../Images/gallery.jpg')} height="300rem" width="600rem" alt="" />
+              </Button>
+            </Grid>
+            <Grid item xs={6}>
+              <Button variant="contained" onClick={() => this.cycleState(2)}>
+                <img src={require('./../Images/gallery.jpg')} height="300rem" width="600rem" alt="" />
+              </Button>
+            </Grid>
+          </Grid>
+          <Grid container item xs={12} spacing={8}>
+            <Grid item xs={6}>
+              <Button variant="contained" onClick={() => this.cycleState(3)}>
+                <img src={require('./../Images/gallery.jpg')} height="300rem" width="600rem" alt="" />
+              </Button>
+            </Grid>
+            <Grid item xs={6}>
+              <Button variant="contained" onClick={() => this.cycleState(4)}>
+                <img src={require('./../Images/gallery.jpg')} height="300rem" width="600rem" alt="" />
+              </Button>
+            </Grid>
+          </Grid>
+        </Grid>
       </Fragment>
     );
   }
