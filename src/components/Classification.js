@@ -17,7 +17,6 @@ class Classification extends Component {
       <Fragment>
         <div>
           Global State {this.props.globalState.classification.data}
-          Global Done {this.props.globalState.classification.done}
         </div>
         <Grid container spacing={8}>
           <Grid container item xs={12} spacing={8}>

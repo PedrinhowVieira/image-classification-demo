@@ -17,7 +17,6 @@ class Filename extends Component {
       <Fragment>
         <div>
           Global State {this.props.globalState.filename.data}
-          Global Done {this.props.globalState.filename.done}
         </div>
         <Grid container spacing={8}>
           <Grid container item xs={12} spacing={8}>
