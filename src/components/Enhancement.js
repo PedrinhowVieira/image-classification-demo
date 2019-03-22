@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Button, Grid } from '@material-ui/core/';
 import { withGlobalState } from 'react-globally'
+import { withRouter } from 'react-router-dom';
 
 class Enhancement extends Component {
   changeState = (i) => {
@@ -10,6 +11,7 @@ class Enhancement extends Component {
         data: [i],
       }
     });
+    this.props.history.push("/classification");
   }
 
   render() {
@@ -49,4 +51,4 @@ class Enhancement extends Component {
   }
 }
 
-export default withGlobalState(Enhancement);
+export default withRouter(withGlobalState(Enhancement));

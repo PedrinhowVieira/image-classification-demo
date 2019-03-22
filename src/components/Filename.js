@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Button, Grid } from '@material-ui/core/';
 import { withGlobalState } from 'react-globally'
+import { withRouter } from 'react-router-dom';
 
 class Filename extends Component {
   changeState = (i) => {
@@ -10,6 +11,7 @@ class Filename extends Component {
         data: [i],
       }
     });
+    this.props.history.push("/summary");
   }
 
   render() {
@@ -49,4 +51,4 @@ class Filename extends Component {
   }
 }
 
-export default withGlobalState(Filename);
+export default withRouter(withGlobalState(Filename));

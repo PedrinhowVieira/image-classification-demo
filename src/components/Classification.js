@@ -1,9 +1,11 @@
 import React, { Component, Fragment } from "react";
 import { Button, Grid } from '@material-ui/core/';
 import { withGlobalState } from 'react-globally'
+import { withRouter } from 'react-router-dom';
 
 class Classification extends Component {
   changeState = (i) => {
+    if (this.props.globalState.classification.done ? this.props.history.push("/summary") : this.props.history.push("/filename"));
     this.props.setGlobalState({
       classification: {
         done: true,
@@ -49,4 +51,4 @@ class Classification extends Component {
   }
 }
 
-export default withGlobalState(Classification);
+export default withRouter(withGlobalState(Classification));
