@@ -5,7 +5,7 @@ import SearchIcon from '@material-ui/icons/Search';
 class SearchBar extends Component {
   render() {
     return (
-      <AppBar position="static" color="default">
+      <AppBar position="static" color="default" style={{boxShadow: '0 4px 2px -2px gray'}}>
         <Toolbar>
           <Typography variant="h6" color="inherit">
             path search ID
